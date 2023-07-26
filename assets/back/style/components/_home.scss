@@ -1,0 +1,30 @@
+body, HTML{
+  background-color: $background-main;
+  color: $font-color;
+  overflow-x: hidden;
+  h1, h2{
+    color: $font-title-color;
+    margin-left: 2rem;
+  }
+  .admin-menu{
+    background-color: $background-secondary;
+    height: 100vh;
+    .admin-menu-title{
+      a{
+        text-decoration: none;
+        &:hover{
+          color: $text-hover;
+        }
+      }
+    }
+    .admin-menu-content{
+      a{
+        text-decoration: none;
+        color: $font-color;
+        &:hover{
+          color: $text-hover;
+        }
+      }
+    }
+  }
+}

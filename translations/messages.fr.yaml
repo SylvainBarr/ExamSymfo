@@ -1,0 +1,66 @@
+listing:
+  show:
+    title: 'Annonce :'
+    year: 'Année du véhicule : '
+    price: 'Prix : '
+    mileage: 'Kilométrage : '
+    createdAt: 'Date annonce : '
+    backButton: "Retour à l'accueil"
+  card:
+    price: 'Prix : '
+    year: 'Année : '
+    mileage: 'Kilométrage : '
+  sucess:
+    add: 'Annonce bien ajoutée'
+  form:
+    title:
+      label: "Titre de l'annonce"
+      placeholder: "Vends une peugeot shiny ..."
+      formTitle: 'Ajouter une annonce'
+    description:
+      label: 'Description'
+      placeholder: "Véhicule en très bon état, refuse cependant d'évoluer ..."
+    producedYear:
+      label: 'Année du véhicule'
+    mileage:
+      label: 'Kilométrage'
+      placeholder: '12000'
+    price:
+      label: 'Prix'
+      placeholder: 'en centimes'
+    image:
+      label: 'Photo du véhicule'
+    model:
+      label: 'Modèle du véhicule'
+    submit: "Créer l'annonce"
+home:
+  title: 'Cardex'
+  title2: 'Bienvenue sur CarDex'
+  lastListings: 'Dernières annonces'
+model:
+  form:
+    brand:
+      label: "Marque du véhicule"
+    name:
+      label: "Nom du modèle"
+      'placeholder': "A3, 207, Mégane, ..."
+    button: 'Valider'
+  show:
+    title: 'Modèle : %name%'
+  edit:
+    title: 'Modifier : %name%'
+  index:
+    title: 'Liste des modèles'
+    table:
+      name: 'Nom'
+      actions: 'Actions'
+      id: 'Id'
+    createNew: ' Ajouter un modèle'
+admin:
+  menu:
+    title: 'Cardex'
+    model:
+      title: 'Liste des modèles'
+      add: 'Ajouter un modèle'
+  button:
+    backTolist: ' Retour à la liste'

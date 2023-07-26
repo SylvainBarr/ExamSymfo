@@ -1,0 +1,47 @@
+{% extends '/front/base.html.twig' %}
+
+{% form_theme form 'bootstrap_5_layout.html.twig' %}
+
+{% block title %}{{ 'home.title'|trans }}{% endblock %}
+
+{% block body %}
+
+<h1 class="my-5">{{ 'home.title2'|trans }}</h1>
+
+    <h2>{{ 'home.lastListings'|trans }}</h2>
+    <div class="row d-flex flex-wrap justify-content-evenly">
+        {% for listing in listings %}
+            {% include 'front/partials/_listing_card.html.twig' %}
+        {% endfor %}
+    </div>
+
+    <div class="container my-5">
+        <h2 class="my-3">{{ 'listing.form.title.formTitle'|trans }}</h2>
+        {{ form_start(form) }}
+            <div class="row">
+
+                <div class="col-6">
+                    {{ form_row(form.title) }}
+                    {{ form_row(form.producedYear) }}
+                    {{ form_row(form.model) }}
+                </div>
+                <div class="col-6">
+                    {{ form_row(form.description) }}
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4">
+                    {{ form_row(form.price) }}
+                </div>
+                <div class="col-4">
+                    {{ form_row(form.mileage) }}
+                </div>
+                <div class="col-4">
+                    {{ form_row(form.image) }}
+                </div>
+            </div>
+            <button class="button button-form">{{ 'listing.form.submit'|trans }}</button>
+        {{ form_end(form) }}
+    </div>
+
+{% endblock %}

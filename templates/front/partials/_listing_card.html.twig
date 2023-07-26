@@ -1,0 +1,16 @@
+<div class="col-lg-3 col-md-5 col-sm-11 listing-card">
+    <a href="{{ path('app_listing_show', {id: listing.id}) }}">
+        <div class="col-12 d-flex justify-content-center" class="listing-card-img">
+            <img src="{{ listing.image }}" alt="{{ listing.model.name }}" class="img-fluid">
+        </div>
+    </a>
+        <div class="card-content-text p-2">
+            <a href="{{ path('app_listing_show', {id: listing.id}) }}">
+                <h2>{{ listing.model.brand.name }}{{ listing.model.name }}</h2>
+            </a>
+            <p>{{ 'listing.card.price'|trans }}{{ listing.price }}</p>
+            <p>{{ 'listing.card.year'|trans }}{{ listing.producedYear }}</p>
+            <p>{{ 'listing.card.mileage'|trans }}{{ listing.mileage }}</p>
+        </div>
+
+</div>

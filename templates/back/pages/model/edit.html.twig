@@ -1,0 +1,16 @@
+{% extends '/back/base.html.twig' %}
+{% form_theme form 'bootstrap_5_layout.html.twig' %}
+
+{% block title %}{{ 'model.edit.title'|trans({'%name%' : model.fullName}) }}{% endblock %}
+
+{% block body %}
+    <h1 class="my-3">{{ 'model.edit.title'|trans({'%name%' : model.fullName}) }}</h1>
+    <a href="{{ path('app_admin_model_index') }}" class="button button-add"><i class="fa-solid fa-left-long"></i>{{ 'admin.button.backTolist'|trans }}</a>
+
+    <div class="col-6 mx-auto">
+        {{ include('back/pages/model/_form.html.twig', {'button_label': 'Update'}) }}
+    </div>
+
+
+    {{ include('back/pages/model/_delete_form.html.twig') }}
+{% endblock %}

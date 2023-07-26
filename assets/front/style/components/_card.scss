@@ -1,0 +1,31 @@
+.listing-card{
+  background-color: $background-secondary;
+  border-radius: 10px;
+  margin: 1rem;
+  padding: 1rem;
+  transition: all .3s ease-in-out;
+  box-shadow: 5px 5px 10px $font-color;
+  &:hover{
+    transform: scale(1.05);
+  }
+  .listing-card-img{
+    width: 100%;
+    overflow: hidden;
+    border-radius: 8px;
+    img{
+      max-height: 100px;
+      border-radius: 8px;
+    }
+  }
+  a{
+    text-decoration: none;
+    color: $font-title-color;
+    h2{
+      font-size: 1.2rem;
+    }
+  }
+
+  p{
+    margin: 0;
+  }
+}

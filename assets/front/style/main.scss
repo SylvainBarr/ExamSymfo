@@ -1,8 +1,12 @@
+@import '~bootstrap';
 
-@import "lib/bootstrap";
-@import "lib/forteawsome";
+@import '~@fortawesome/fontawesome-free/scss/fontawesome';
+@import '~@fortawesome/fontawesome-free/scss/brands';
+@import '~@fortawesome/fontawesome-free/scss/regular';
+@import '~@fortawesome/fontawesome-free/scss/solid';
 
-@import "main/variables";
-
-@import "lib/pagination";
-@import "main/general";
+@import "variables";
+@import "components/home";
+@import "components/listing_show";
+@import "components/card";
+@import "components/button";

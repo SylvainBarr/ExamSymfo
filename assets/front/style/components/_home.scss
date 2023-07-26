@@ -1,0 +1,9 @@
+body, HTML{
+  background-color: $background-main;
+  color: $font-color;
+  overflow-x: hidden;
+  h1, h2{
+    color: $font-title-color;
+    margin-left: 2rem;
+  }
+}

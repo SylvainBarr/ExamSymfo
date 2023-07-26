@@ -1,0 +1,35 @@
+{% extends '/front/base.html.twig' %}
+
+{% block title %}{{ 'listing.show.title'|trans }} {{ listing.model.brand.name }} {{ listing.model.name }}{% endblock %}
+
+{% block body %}
+<div class="px-3">
+    <a href="{{ path('app_home') }}" class="button button-back"><i class="fa-solid fa-left-long"></i> {{ 'listing.show.backButton'|trans }}</a>
+    <h1 class="my-5">{{ 'listing.show.title'|trans }} {{ listing.model.brand.name }} {{ listing.model.name }}</h1>
+
+    <div>
+        <div class="row">
+            <div class="col-lg-7 col-sm-12">
+            {% if listing.image is not null %}
+                <img src="{{ listing.image }}" alt="{{ listing.model.brand.name }} {{ listing.model.name }}" class="listing-image">
+            {% else %}
+                <img src="https://www.mjc-castanet-tolosan.fr/wp-content/uploads/2016/06/Pas-dimage-disponible1-e1466657277567.jpg">
+            {% endif %}
+            </div>
+            <div class="col-lg-5 col-sm-12">
+                <h2 class="my-2">{{ listing.title }}</h2>
+                <p>{{ 'listing.show.year'|trans }}{{ listing.producedYear }}</p>
+                <p>{{ 'listing.show.mileage'|trans }}{{ listing.mileage }}</p>
+                <p>{{ 'listing.show.price'|trans }}{{ listing.price }}</p>
+                <p>{{ 'listing.show.createdAt'|trans }}{{ listing.createdAt|date('d-m-Y') }}</p>
+            </div>
+        </div>
+
+
+        <p>{{ listing.description }}</p>
+
+    </div>
+
+</div>
+{% endblock %}
+
